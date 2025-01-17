@@ -20,5 +20,14 @@ services:
             - '../src/Entity/'
             - '../src/Kernel.php'
 
+    App\Service\LogService:
+        autowire: true
+        autoconfigure: true
+
+    App\Service\MailService:
+        arguments:
+            $mailer: '@mailer.mailer'
+
+
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones

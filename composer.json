@@ -12,6 +12,8 @@
         "doctrine/doctrine-bundle": "^2.13",
         "doctrine/doctrine-migrations-bundle": "^3.3",
         "doctrine/orm": "^3.3",
+        "lexik/jwt-authentication-bundle": "^3.1",
+        "nelmio/api-doc-bundle": "^4.34",
         "phpdocumentor/reflection-docblock": "^5.6",
         "phpstan/phpdoc-parser": "^2.0",
         "symfony/asset": "7.2.*",
@@ -26,8 +28,10 @@
         "symfony/http-client": "7.2.*",
         "symfony/intl": "7.2.*",
         "symfony/mailer": "7.2.*",
+        "symfony/mailgun-mailer": "7.2.*",
+        "symfony/maker-bundle": "*",
         "symfony/mime": "7.2.*",
-        "symfony/monolog-bundle": "^3.0",
+        "symfony/monolog-bundle": "^3.10",
         "symfony/notifier": "7.2.*",
         "symfony/process": "7.2.*",
         "symfony/property-access": "7.2.*",
@@ -45,7 +49,8 @@
         "symfony/yaml": "7.2.*",
         "symfonycorp/platformsh-meta": "^1.0",
         "twig/extra-bundle": "^2.12|^3.0",
-        "twig/twig": "^2.12|^3.0"
+        "twig/twig": "^2.12|^3.0",
+        "zircote/swagger-php": "^4.11"
     },
     "config": {
         "allow-plugins": {
@@ -100,11 +105,11 @@
         }
     },
     "require-dev": {
+        "doctrine/doctrine-fixtures-bundle": "^4.0",
         "phpunit/phpunit": "^9.5",
         "symfony/browser-kit": "7.2.*",
         "symfony/css-selector": "7.2.*",
         "symfony/debug-bundle": "7.2.*",
-        "symfony/maker-bundle": "^1.0",
         "symfony/phpunit-bridge": "^7.2",
         "symfony/stopwatch": "7.2.*",
         "symfony/web-profiler-bundle": "7.2.*"
